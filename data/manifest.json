@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-05-14T15:40:16.486Z",
+  "latest": {
+    "date": "2026-05-14",
+    "generatedAt": "2026-05-14T15:40:16.483Z",
+    "snapshotPath": "/data/history/2026-05-14.json",
+    "reportPath": "/reports/2026-05-14.md",
+    "title": "Stocks & Stuffs Current Opportunity Snapshot",
+    "source": "provider",
+    "providerHealth": [
+      {
+        "source": "Yahoo Finance chart API",
+        "feedType": "EOD",
+        "level": "good",
+        "delay": "latest available chart quote"
+      },
+      {
+        "source": "No live options chain configured",
+        "feedType": "OPRA_INDICATIVE",
+        "level": "warning",
+        "delay": "underlying is current; options chain is unavailable"
+      },
+      {
+        "source": "Yahoo Finance crypto aggregate",
+        "feedType": "AGGREGATED",
+        "level": "good",
+        "delay": "latest available chart quote"
+      }
+    ],
+    "ai": {
+      "mode": "fallback/offline",
+      "status": "fallback",
+      "provider": "offline-template",
+      "model": "deterministic-template-v1"
+    },
+    "opportunityCount": 4,
+    "avoidCount": 1
+  },
+  "history": [
+    {
+      "date": "2026-05-14",
+      "generatedAt": "2026-05-14T15:40:16.483Z",
+      "snapshotPath": "/data/history/2026-05-14.json",
+      "reportPath": "/reports/2026-05-14.md",
+      "title": "Stocks & Stuffs Current Opportunity Snapshot",
+      "source": "provider",
+      "providerHealth": [
+        {
+          "source": "Yahoo Finance chart API",
+          "feedType": "EOD",
+          "level": "good",
+          "delay": "latest available chart quote"
+        },
+        {
+          "source": "No live options chain configured",
+          "feedType": "OPRA_INDICATIVE",
+          "level": "warning",
+          "delay": "underlying is current; options chain is unavailable"
+        },
+        {
+          "source": "Yahoo Finance crypto aggregate",
+          "feedType": "AGGREGATED",
+          "level": "good",
+          "delay": "latest available chart quote"
+        }
+      ],
+      "ai": {
+        "mode": "fallback/offline",
+        "status": "fallback",
+        "provider": "offline-template",
+        "model": "deterministic-template-v1"
+      },
+      "opportunityCount": 4,
+      "avoidCount": 1
+    },
+    {
+      "date": "2026-05-13",
+      "generatedAt": "2026-05-13T23:30:41.095Z",
+      "snapshotPath": "/data/history/2026-05-13.json",
+      "reportPath": "/reports/2026-05-13.md",
+      "title": "Stocks & Stuffs Demo Opportunity Snapshot",
+      "source": "mock",
+      "providerHealth": [
+        {
+          "source": "Demo EOD aggregate",
+          "feedType": "EOD",
+          "level": "warning",
+          "delay": "prior close / demo snapshot"
+        },
+        {
+          "source": "Demo indicative options feed",
+          "feedType": "OPRA_INDICATIVE",
+          "level": "warning",
+          "delay": "delayed/indicative options quote"
+        },
+        {
+          "source": "Demo crypto aggregate",
+          "feedType": "AGGREGATED",
+          "level": "warning",
+          "delay": "aggregated demo quote"
+        }
+      ],
+      "ai": {
+        "mode": "fallback/offline",
+        "status": "fallback",
+        "provider": "offline-template",
+        "model": "deterministic-template-v1"
+      },
+      "opportunityCount": 4,
+      "avoidCount": 1
+    }
+  ],
+  "notes": [
+    "Generated static snapshots are public when deployed to GitHub Pages.",
+    "Do not publish account balances, full positions, API keys, or other sensitive portfolio details.",
+    "Daily report generation is safe without provider API keys and may fall back to mock/demo data.",
+    "Provider-backed generation should run only in trusted GitHub Actions or local jobs; browser code reads static JSON only."
+  ]
+}

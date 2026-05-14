@@ -1,0 +1,872 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-14T15:40:16.483Z",
+  "asOfDate": "2026-05-14",
+  "title": "Stocks & Stuffs Current Opportunity Snapshot",
+  "marketRegime": {
+    "label": "risk_on",
+    "summary": "Current snapshot uses live server-side quotes. SPY $748.57 and QQQ $721.24 set the aggression cap.",
+    "trend": "up",
+    "volatility": "normal",
+    "evidence": [
+      "SPY $748.57 vs SMA20 $722.37 and SMA50 $688.89.",
+      "QQQ $721.24 vs SMA20 $677.43 and SMA50 $629.49.",
+      "Options chain is not connected, so options cannot graduate beyond watch-only."
+    ],
+    "dataQuality": {
+      "source": "Yahoo Finance chart API",
+      "feedType": "EOD",
+      "timestamp": "2026-05-14T15:40:15.000Z",
+      "delay": "latest available chart quote",
+      "level": "good",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Confirm live broker quote before execution.",
+        "Provider data is public static snapshot data after generation."
+      ]
+    }
+  },
+  "opportunities": [
+    {
+      "id": "stock-nvda-current-momentum",
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp.",
+      "assetClass": "stock",
+      "category": "short_term_stock",
+      "setupType": "Current-price momentum pullback",
+      "thesis": "NVDA is actionable only around the current quote $236.01 with confirmation. Do not use stale split-adjusted or pre-split levels.",
+      "explanation": "NVDA is above its 20-day SMA ($209.13) and above its 50-day SMA ($192.24), with RSI 76.8 and 20-day change 19.0%.",
+      "score": {
+        "total": 88,
+        "technical": 71,
+        "catalyst": 72,
+        "liquidity": 92,
+        "risk": 37,
+        "dataQuality": 82
+      },
+      "confidence": 82,
+      "confidenceBand": "high",
+      "status": "watch_only",
+      "catalyst": "AI/semiconductor leadership remains the core watch item, but the setup is gated by the current quote and volume confirmation.",
+      "technicalContext": "Current price $236.01 as of May 14, 2026, 3:40 PM UTC; SMA20 $209.13, SMA50 $192.24, ATR14 $7.16.",
+      "liquidity": {
+        "averageDailyVolume": 148023608,
+        "dollarVolume": 34935051724,
+        "bidAskSpreadPercent": 0.05,
+        "warnings": []
+      },
+      "actionPlan": "Watch only until price reclaims the current entry zone $234.22-$239.23 and market breadth confirms.",
+      "risk": {
+        "entryZone": [
+          234.22,
+          239.23
+        ],
+        "targetZone": [
+          247.46,
+          253.19
+        ],
+        "invalidationLevel": 226.35,
+        "riskRewardRatio": 1.31,
+        "positionSizingNote": "Size from the current $236.01 quote. If the quote changes materially, regenerate the snapshot before acting.",
+        "whatChangesMind": [
+          "Price loses the invalidation level",
+          "Volume fails to confirm the move",
+          "QQQ/SPY market tone breaks risk-off"
+        ]
+      },
+      "currentPrice": 236.01,
+      "dataQuality": {
+        "source": "Yahoo Finance chart API",
+        "feedType": "EOD",
+        "timestamp": "2026-05-14T15:40:15.000Z",
+        "delay": "latest available chart quote",
+        "level": "good",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Confirm live broker quote before execution.",
+          "Provider data is public static snapshot data after generation."
+        ]
+      },
+      "alerts": [
+        "Current quote: $236.01 USD.",
+        "Confirm live broker quote before acting."
+      ],
+      "tags": [
+        "semiconductors",
+        "momentum",
+        "current-price"
+      ]
+    },
+    {
+      "id": "long-msft-current-quality",
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "assetClass": "stock",
+      "category": "long_term_stock",
+      "setupType": "Quality compounder pullback using current price",
+      "thesis": "MSFT is actionable only around the current quote $409.64 with confirmation. Do not use stale split-adjusted or pre-split levels.",
+      "explanation": "MSFT is below its 20-day SMA ($417.46) and above its 50-day SMA ($398.84), with RSI 50.4 and 20-day change -2.5%.",
+      "score": {
+        "total": 70,
+        "technical": 52,
+        "catalyst": 70,
+        "liquidity": 92,
+        "risk": 42,
+        "dataQuality": 82
+      },
+      "confidence": 66,
+      "confidenceBand": "medium",
+      "status": "watch_only",
+      "catalyst": "Cloud, AI platform monetization, and enterprise software durability support long-term monitoring.",
+      "technicalContext": "Current price $409.64 as of May 14, 2026, 3:40 PM UTC; SMA20 $417.46, SMA50 $398.84, ATR14 $10.47.",
+      "liquidity": {
+        "averageDailyVolume": 33610271,
+        "dollarVolume": 13768111412,
+        "bidAskSpreadPercent": 0.05,
+        "warnings": []
+      },
+      "actionPlan": "Watch only until price reclaims the current entry zone $407.02-$412.26 and market breadth confirms.",
+      "risk": {
+        "entryZone": [
+          407.02,
+          412.26
+        ],
+        "targetZone": [
+          426.4,
+          434.77
+        ],
+        "invalidationLevel": 395.7,
+        "riskRewardRatio": 1.5,
+        "positionSizingNote": "Size from the current $409.64 quote. If the quote changes materially, regenerate the snapshot before acting.",
+        "whatChangesMind": [
+          "Price loses the invalidation level",
+          "Volume fails to confirm the move",
+          "QQQ/SPY market tone breaks risk-off"
+        ]
+      },
+      "currentPrice": 409.64,
+      "dataQuality": {
+        "source": "Yahoo Finance chart API",
+        "feedType": "EOD",
+        "timestamp": "2026-05-14T15:40:15.000Z",
+        "delay": "latest available chart quote",
+        "level": "good",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Confirm live broker quote before execution.",
+          "Provider data is public static snapshot data after generation."
+        ]
+      },
+      "alerts": [
+        "Current quote: $409.64 USD.",
+        "Confirm live broker quote before acting."
+      ],
+      "tags": [
+        "quality",
+        "long-term",
+        "current-price"
+      ]
+    },
+    {
+      "id": "option-spy-current-watch",
+      "symbol": "SPY 755/770C watch",
+      "name": "SPY defined-risk call spread watch",
+      "assetClass": "option",
+      "category": "options",
+      "setupType": "Defined-risk index continuation watch",
+      "thesis": "SPY options are watch-only. The underlying quote is current at $748.57, but the option chain is not live in this dashboard.",
+      "explanation": "The dashboard can identify an underlying setup, but it cannot produce actionable options entries without fresh bid/ask, open interest, volume, and greeks.",
+      "score": {
+        "total": 48,
+        "technical": 58,
+        "catalyst": 50,
+        "liquidity": 35,
+        "risk": 62,
+        "dataQuality": 20
+      },
+      "confidence": 38,
+      "confidenceBand": "low",
+      "status": "watch_only",
+      "catalyst": "Broad-market continuation only if SPY holds current trend and macro tone stays supportive.",
+      "technicalContext": "SPY current $748.57, SMA20 $722.37, SMA50 $688.89, RSI 78.7.",
+      "liquidity": {
+        "warnings": [
+          "No live bid/ask",
+          "No open interest",
+          "No greeks",
+          "Watch-only by rule"
+        ]
+      },
+      "actionPlan": "Use this only as a prompt to check a broker chain. Do not treat displayed debit/risk as executable.",
+      "risk": {
+        "entryZone": [
+          750.44,
+          754.17
+        ],
+        "targetZone": [
+          757.53,
+          763.51
+        ],
+        "invalidationLevel": 739.61,
+        "maxLoss": 1,
+        "riskRewardRatio": 0,
+        "positionSizingNote": "Underlying trigger only. No options sizing until live OPRA or broker quote confirms spread price and max loss.",
+        "whatChangesMind": [
+          "Live chain shows tight spread under 10%",
+          "Open interest and volume are sufficient",
+          "Underlying confirms above trigger"
+        ]
+      },
+      "currentPrice": 748.57,
+      "dataQuality": {
+        "source": "No live options chain configured",
+        "feedType": "OPRA_INDICATIVE",
+        "timestamp": "2026-05-14T15:40:14.000Z",
+        "delay": "underlying is current; options chain is unavailable",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Options ideas are watch-only until a licensed options chain confirms bid/ask, volume, open interest, and greeks.",
+          "Do not use displayed options ranges for execution pricing."
+        ]
+      },
+      "optionContract": {
+        "underlying": "SPY",
+        "type": "call",
+        "strike": 755,
+        "expiration": "2026-06-19",
+        "maxLoss": 1
+      },
+      "alerts": [
+        "Underlying price is current; options pricing is not.",
+        "Watch-only until broker confirms the chain."
+      ],
+      "tags": [
+        "defined-risk",
+        "index",
+        "options-watch-only"
+      ]
+    },
+    {
+      "id": "crypto-btc-current-range",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "assetClass": "crypto",
+      "category": "crypto",
+      "setupType": "Current-price breakout watch",
+      "thesis": "BTC is watch-only until it confirms above the current trigger zone near $81,295-$82,506.",
+      "explanation": "Current BTC quote is $80,892 with RSI 59.5 and ATR14 $2,018. Crypto can move while equities are closed, so stale levels are extra dangerous here.",
+      "score": {
+        "total": 61,
+        "technical": 64,
+        "catalyst": 55,
+        "liquidity": 80,
+        "risk": 50,
+        "dataQuality": 72
+      },
+      "confidence": 55,
+      "confidenceBand": "medium",
+      "status": "watch_only",
+      "catalyst": "ETF flows, macro risk appetite, and liquidity conditions.",
+      "technicalContext": "Current price $80,892 as of May 14, 2026, 3:40 PM UTC; SMA20 $79,250, SMA50 $74,749.",
+      "liquidity": {
+        "dollarVolume": 2603566106236691,
+        "bidAskSpreadPercent": 0.08,
+        "warnings": [
+          "24/7 volatility"
+        ]
+      },
+      "actionPlan": "Wait for confirmed breakout and avoid leverage inside chop.",
+      "risk": {
+        "entryZone": [
+          81295.49,
+          82506.04
+        ],
+        "targetZone": [
+          84523.61,
+          86339.42
+        ],
+        "invalidationLevel": 78470.9,
+        "riskRewardRatio": 1.6,
+        "positionSizingNote": "Keep size small; regenerate snapshot if BTC moves more than one ATR from the displayed quote.",
+        "whatChangesMind": [
+          "Failed breakout back into range",
+          "Macro risk-off spike",
+          "Liquidity deteriorates"
+        ]
+      },
+      "currentPrice": 80891.98,
+      "dataQuality": {
+        "source": "Yahoo Finance crypto aggregate",
+        "feedType": "AGGREGATED",
+        "timestamp": "2026-05-14T15:40:14.000Z",
+        "delay": "latest available chart quote",
+        "level": "good",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Confirm live broker quote before execution.",
+          "Provider data is public static snapshot data after generation."
+        ]
+      },
+      "alerts": [
+        "Current quote: $80,892 USD."
+      ],
+      "tags": [
+        "crypto",
+        "range",
+        "current-price"
+      ]
+    }
+  ],
+  "avoidList": [
+    {
+      "id": "avoid-tsla-current-risk",
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "assetClass": "stock",
+      "category": "avoid",
+      "setupType": "Headline volatility / wait for cleaner risk",
+      "thesis": "Avoid chasing TSLA at the current quote $449.76 until a cleaner base or invalidation forms.",
+      "explanation": "Current price $449.76, RSI 71.3, ATR14 $16.71. The setup needs a defined stop closer to price before it becomes actionable.",
+      "score": {
+        "total": 36,
+        "technical": 42,
+        "catalyst": 44,
+        "liquidity": 90,
+        "risk": 20,
+        "dataQuality": 82
+      },
+      "confidence": 40,
+      "confidenceBand": "low",
+      "status": "avoid",
+      "catalyst": "Headline-driven volatility without a clean risk box.",
+      "technicalContext": "SMA20 $400.56, SMA50 $386.58, 20-day change 15.6%.",
+      "liquidity": {
+        "averageDailyVolume": 60649022,
+        "dollarVolume": 27277504135,
+        "bidAskSpreadPercent": 0.06,
+        "warnings": [
+          "Volatility elevated"
+        ]
+      },
+      "actionPlan": "Stand down until a base, pullback, or tighter invalidation appears.",
+      "risk": {
+        "entryZone": [
+          458.12,
+          466.47
+        ],
+        "targetZone": [
+          483.18,
+          496.55
+        ],
+        "invalidationLevel": 426.36,
+        "riskRewardRatio": 0.85,
+        "positionSizingNote": "No position suggested; risk/reward is not clean enough.",
+        "whatChangesMind": [
+          "Base forms with higher low",
+          "Risk/reward improves above 1.5",
+          "Catalyst becomes measurable"
+        ]
+      },
+      "currentPrice": 449.76,
+      "dataQuality": {
+        "source": "Yahoo Finance chart API",
+        "feedType": "EOD",
+        "timestamp": "2026-05-14T15:40:15.000Z",
+        "delay": "latest available chart quote",
+        "level": "good",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Confirm live broker quote before execution.",
+          "Provider data is public static snapshot data after generation."
+        ]
+      },
+      "alerts": [
+        "Low-confidence ideas default away from action."
+      ],
+      "tags": [
+        "avoid",
+        "risk-discipline",
+        "current-price"
+      ]
+    }
+  ],
+  "watchlists": [
+    {
+      "id": "broad-market",
+      "name": "Broad Market",
+      "description": "Index and volatility proxies for market-regime context.",
+      "items": [
+        {
+          "symbol": "SPY",
+          "kind": "etf"
+        },
+        {
+          "symbol": "QQQ",
+          "kind": "etf"
+        },
+        {
+          "symbol": "IWM",
+          "kind": "etf"
+        },
+        {
+          "symbol": "DIA",
+          "kind": "etf"
+        },
+        {
+          "symbol": "VIX",
+          "kind": "etf"
+        }
+      ]
+    },
+    {
+      "id": "large-cap-tech-ai",
+      "name": "Large-Cap Tech / AI",
+      "description": "Liquid mega/large-cap AI, cloud, platform, and semiconductor leaders.",
+      "items": [
+        {
+          "symbol": "NVDA",
+          "kind": "stock"
+        },
+        {
+          "symbol": "MSFT",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AAPL",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AMZN",
+          "kind": "stock"
+        },
+        {
+          "symbol": "GOOGL",
+          "kind": "stock"
+        },
+        {
+          "symbol": "META",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AMD",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AVGO",
+          "kind": "stock"
+        },
+        {
+          "symbol": "SMCI",
+          "kind": "stock"
+        },
+        {
+          "symbol": "PLTR",
+          "kind": "stock"
+        }
+      ]
+    },
+    {
+      "id": "high-liquidity-options-candidates",
+      "name": "High-Liquidity Options Candidates",
+      "description": "Underlyings to screen for defined-risk options ideas; quotes remain delayed/indicative until licensed OPRA is configured.",
+      "items": [
+        {
+          "symbol": "SPY",
+          "kind": "option"
+        },
+        {
+          "symbol": "QQQ",
+          "kind": "option"
+        },
+        {
+          "symbol": "IWM",
+          "kind": "option"
+        },
+        {
+          "symbol": "AAPL",
+          "kind": "option"
+        },
+        {
+          "symbol": "MSFT",
+          "kind": "option"
+        },
+        {
+          "symbol": "NVDA",
+          "kind": "option"
+        },
+        {
+          "symbol": "TSLA",
+          "kind": "option"
+        },
+        {
+          "symbol": "AMD",
+          "kind": "option"
+        },
+        {
+          "symbol": "AMZN",
+          "kind": "option"
+        },
+        {
+          "symbol": "META",
+          "kind": "option"
+        },
+        {
+          "symbol": "GOOGL",
+          "kind": "option"
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto",
+      "description": "Major crypto assets for public market-data watch mode.",
+      "items": [
+        {
+          "symbol": "BTC",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "ETH",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "SOL",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "BNB",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "XRP",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "DOGE",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "LINK",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "AVAX",
+          "kind": "crypto"
+        }
+      ]
+    },
+    {
+      "id": "defensive-macro",
+      "name": "Defensive / Macro-Sensitive",
+      "description": "Defensive sectors and macro proxies for risk-off or rate-sensitive context.",
+      "items": [
+        {
+          "symbol": "GLD",
+          "kind": "etf"
+        },
+        {
+          "symbol": "TLT",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLE",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLF",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLK",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLU",
+          "kind": "etf"
+        }
+      ]
+    }
+  ],
+  "watchlistAlerts": [
+    {
+      "id": "alert-current-price-gate",
+      "symbol": "NVDA",
+      "message": "NVDA quote is $236.01; entry, target, and invalidation are now anchored to the current quote, not stale 800s levels.",
+      "severity": "info",
+      "dataQuality": {
+        "source": "Yahoo Finance chart API",
+        "feedType": "EOD",
+        "timestamp": "2026-05-14T15:40:15.000Z",
+        "delay": "latest available chart quote",
+        "level": "good",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Confirm live broker quote before execution.",
+          "Provider data is public static snapshot data after generation."
+        ]
+      }
+    },
+    {
+      "id": "alert-options-quality",
+      "symbol": "SPY",
+      "message": "Options remain watch-only because no licensed live options chain is configured.",
+      "severity": "warning",
+      "dataQuality": {
+        "source": "No live options chain configured",
+        "feedType": "OPRA_INDICATIVE",
+        "timestamp": "2026-05-14T15:40:14.000Z",
+        "delay": "underlying is current; options chain is unavailable",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Options ideas are watch-only until a licensed options chain confirms bid/ask, volume, open interest, and greeks.",
+          "Do not use displayed options ranges for execution pricing."
+        ]
+      }
+    }
+  ],
+  "dataWarnings": [
+    "GitHub Pages output is public-facing; exclude private holdings, balances, brokerage data, API keys, and other sensitive portfolio details.",
+    "Decision support only. Confirm live quotes, spreads, volume, and news in a broker or primary market data tool before acting.",
+    "Stock and crypto prices are fetched server-side from Yahoo Finance chart data during snapshot generation.",
+    "Options ideas are watch-only until licensed OPRA or broker chain data is configured.",
+    "No auto-trading and no guaranteed returns."
+  ],
+  "providerHealth": [
+    {
+      "source": "Yahoo Finance chart API",
+      "feedType": "EOD",
+      "timestamp": "2026-05-14T15:40:15.000Z",
+      "delay": "latest available chart quote",
+      "level": "good",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Confirm live broker quote before execution.",
+        "Provider data is public static snapshot data after generation."
+      ]
+    },
+    {
+      "source": "No live options chain configured",
+      "feedType": "OPRA_INDICATIVE",
+      "timestamp": "2026-05-14T15:40:14.000Z",
+      "delay": "underlying is current; options chain is unavailable",
+      "level": "warning",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Options ideas are watch-only until a licensed options chain confirms bid/ask, volume, open interest, and greeks.",
+        "Do not use displayed options ranges for execution pricing."
+      ]
+    },
+    {
+      "source": "Yahoo Finance crypto aggregate",
+      "feedType": "AGGREGATED",
+      "timestamp": "2026-05-14T15:40:14.000Z",
+      "delay": "latest available chart quote",
+      "level": "good",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Confirm live broker quote before execution.",
+        "Provider data is public static snapshot data after generation."
+      ]
+    }
+  ],
+  "dailyAnalysis": {
+    "headline": "Current-price snapshot: act only on fresh quotes and defined invalidation.",
+    "marketBias": "bullish",
+    "focus": [
+      "NVDA levels are anchored around $236.01 instead of stale 800s values.",
+      "Promote ideas only when current quote, volume, and invalidation all agree.",
+      "Keep options watch-only until live chain data exists."
+    ],
+    "actionableInsights": [
+      {
+        "priority": 1,
+        "symbol": "NVDA",
+        "title": "NVDA is a current-price watch",
+        "action": "Watch only until price reclaims the current entry zone $234.22-$239.23 and market breadth confirms.",
+        "why": "Current price $236.01 as of May 14, 2026, 3:40 PM UTC; SMA20 $209.13, SMA50 $192.24, ATR14 $7.16.",
+        "invalidation": "Invalidate below $226.35 or if semis lose breadth.",
+        "timeHorizon": "today",
+        "confidence": 82
+      },
+      {
+        "priority": 2,
+        "symbol": "MSFT",
+        "title": "MSFT is a slower quality setup",
+        "action": "Watch only until price reclaims the current entry zone $407.02-$412.26 and market breadth confirms.",
+        "why": "Current price $409.64 as of May 14, 2026, 3:40 PM UTC; SMA20 $417.46, SMA50 $398.84, ATR14 $10.47.",
+        "invalidation": "Reassess below $395.7 or if broad trend breaks.",
+        "timeHorizon": "longer_term",
+        "confidence": 66
+      },
+      {
+        "priority": 3,
+        "symbol": "SPY 755/770C watch",
+        "title": "Options stay in the penalty box until quotes are real",
+        "action": "Use this only as a prompt to check a broker chain. Do not treat displayed debit/risk as executable.",
+        "why": "Underlying price is current, but chain data is missing.",
+        "invalidation": "Skip if live spread is wide, volume is thin, or SPY loses the underlying invalidation level.",
+        "timeHorizon": "this_week",
+        "confidence": 38
+      },
+      {
+        "priority": 4,
+        "symbol": "BTC",
+        "title": "BTC needs breakout confirmation",
+        "action": "Wait for confirmed breakout and avoid leverage inside chop.",
+        "why": "Current price $80,892 as of May 14, 2026, 3:40 PM UTC; SMA20 $79,250, SMA50 $74,749.",
+        "invalidation": "Failed breakout or price below $78,471.",
+        "timeHorizon": "today",
+        "confidence": 55
+      },
+      {
+        "priority": 5,
+        "symbol": "TSLA",
+        "title": "TSLA remains avoid/wait",
+        "action": "Stand down until a base, pullback, or tighter invalidation appears.",
+        "why": "SMA20 $400.56, SMA50 $386.58, 20-day change 15.6%.",
+        "invalidation": "Reconsider only after a cleaner base or tighter risk box forms.",
+        "timeHorizon": "today",
+        "confidence": 40
+      }
+    ],
+    "tips": [
+      {
+        "title": "Reject stale levels immediately",
+        "detail": "If entry or exit levels are nowhere near the current quote, the setup is invalid until regenerated.",
+        "category": "data_quality"
+      },
+      {
+        "title": "Start with invalidation",
+        "detail": "A setup without a nearby invalidation level is a watch item, not an action item.",
+        "category": "risk"
+      },
+      {
+        "title": "Options need one extra gate",
+        "detail": "Confirm live bid/ask, open interest, volume, greeks, max loss, and expiration fit before acting.",
+        "category": "options"
+      }
+    ]
+  },
+  "aiAnalysis": {
+    "mode": "fallback/offline",
+    "status": "fallback",
+    "provider": "offline-template",
+    "model": "deterministic-template-v1",
+    "generatedAt": "2026-05-14T15:40:16.484Z",
+    "summary": "Current snapshot uses live server-side quotes. SPY $748.57 and QQQ $721.24 set the aggression cap. Top ranked setups by existing score: NVDA (88/100, high), MSFT (70/100, medium), BTC (61/100, medium). This offline brief is deterministic and does not add outside news or model judgment.",
+    "keyDrivers": [
+      "Market regime is risk_on with up trend and normal volatility.",
+      "NVDA: Current-price momentum pullback; score 88/100; confidence high.",
+      "MSFT: Quality compounder pullback using current price; score 70/100; confidence medium.",
+      "BTC: Current-price breakout watch; score 61/100; confidence medium."
+    ],
+    "risks": [
+      "No AI provider key or local endpoint configured.",
+      "4 setup(s) are low-confidence or watch-only; avoid upgrading without fresh evidence.",
+      "GitHub Pages output is public-facing; exclude private holdings, balances, brokerage data, API keys, and other sensitive portfolio details.",
+      "Decision support only. Confirm live quotes, spreads, volume, and news in a broker or primary market data tool before acting.",
+      "Stock and crypto prices are fetched server-side from Yahoo Finance chart data during snapshot generation."
+    ],
+    "recommendedBehavior": "selective",
+    "strategyInsights": [
+      {
+        "title": "Play confirmation, not prediction",
+        "detail": "Regime is risk_on; require price/volume confirmation before promoting watch-only ideas.",
+        "evidence": [
+          "SPY $748.57 vs SMA20 $722.37 and SMA50 $688.89.",
+          "QQQ $721.24 vs SMA20 $677.43 and SMA50 $629.49.",
+          "Options chain is not connected, so options cannot graduate beyond watch-only."
+        ]
+      },
+      {
+        "title": "Prefer defined risk",
+        "detail": "Top ideas need clear invalidation and acceptable risk/reward before they graduate from watchlist to candidate.",
+        "evidence": [
+          "NVDA: R/R 1.31; invalidation 226.35",
+          "MSFT: R/R 1.5; invalidation 395.7",
+          "BTC: R/R 1.6; invalidation 78470.9"
+        ]
+      },
+      {
+        "title": "Data quality gates stay on",
+        "detail": "Options and demo feeds are screening-grade only; verify live quotes and spreads before any execution decision.",
+        "evidence": [
+          "Yahoo Finance chart API: EOD, latest available chart quote",
+          "No live options chain configured: OPRA_INDICATIVE, underlying is current; options chain is unavailable",
+          "Yahoo Finance crypto aggregate: AGGREGATED, latest available chart quote"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "symbol": "NVDA",
+        "decision": "watch",
+        "reason": "Current-price momentum pullback; score 88/100 with high confidence. NVDA is actionable only around the current quote $236.01 with confirmation. Do not use stale split-adjusted or pre-split levels.",
+        "confidence": 82,
+        "nextCheck": "Wait for better confirmation or risk/reward before upgrading."
+      },
+      {
+        "symbol": "MSFT",
+        "decision": "watch",
+        "reason": "Quality compounder pullback using current price; score 70/100 with medium confidence. MSFT is actionable only around the current quote $409.64 with confirmation. Do not use stale split-adjusted or pre-split levels.",
+        "confidence": 66,
+        "nextCheck": "Wait for better confirmation or risk/reward before upgrading."
+      },
+      {
+        "symbol": "BTC",
+        "decision": "watch",
+        "reason": "Current-price breakout watch; score 61/100 with medium confidence. BTC is watch-only until it confirms above the current trigger zone near $81,295-$82,506.",
+        "confidence": 55,
+        "nextCheck": "Wait for better confirmation or risk/reward before upgrading."
+      },
+      {
+        "symbol": "TSLA",
+        "decision": "avoid",
+        "reason": "Headline volatility / wait for cleaner risk; score 36/100 with low confidence. Avoid chasing TSLA at the current quote $449.76 until a cleaner base or invalidation forms.",
+        "confidence": 40,
+        "nextCheck": "Wait for better confirmation or risk/reward before upgrading."
+      }
+    ],
+    "sourceNotes": [
+      "AI mode: fallback/offline; no external model call was made.",
+      "Yahoo Finance chart API EOD latest available chart quote",
+      "No live options chain configured OPRA_INDICATIVE underlying is current; options chain is unavailable",
+      "Yahoo Finance crypto aggregate AGGREGATED latest available chart quote"
+    ]
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-05-13T23:30:41.095Z",
+  "asOfDate": "2026-05-13",
+  "title": "Stocks & Stuffs Demo Opportunity Snapshot",
+  "marketRegime": {
+    "label": "neutral",
+    "summary": "Demo regime is mixed: large-cap trend remains constructive, but options and crypto signals require confirmation.",
+    "trend": "sideways",
+    "volatility": "normal",
+    "evidence": [
+      "Major indexes above long-term trend in demo data",
+      "Leadership narrow",
+      "Options data is indicative only"
+    ],
+    "dataQuality": {
+      "source": "Demo EOD aggregate",
+      "feedType": "EOD",
+      "timestamp": "2026-05-12T21:00:00.000Z",
+      "delay": "prior close / demo snapshot",
+      "level": "warning",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Demo data only; not execution-grade."
+      ]
+    }
+  },
+  "opportunities": [
+    {
+      "id": "stock-nvda-breakout-demo",
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp.",
+      "assetClass": "stock",
+      "category": "short_term_stock",
+      "setupType": "Momentum pullback near support",
+      "thesis": "Watch for continuation only if price reclaims short-term momentum with volume confirmation.",
+      "explanation": "The demo setup combines relative strength leadership with a pullback into a defined risk zone; patience is required to avoid chasing.",
+      "score": {
+        "total": 78,
+        "technical": 84,
+        "catalyst": 72,
+        "liquidity": 95,
+        "risk": 70,
+        "dataQuality": 65
+      },
+      "confidence": 72,
+      "confidenceBand": "medium",
+      "status": "candidate",
+      "catalyst": "AI/semiconductor demand narrative and upcoming sector earnings read-throughs.",
+      "technicalContext": "Above rising 20/50 day moving averages in demo candle set; volume trend supportive.",
+      "liquidity": {
+        "averageDailyVolume": 43000000,
+        "dollarVolume": 38000000000,
+        "bidAskSpreadPercent": 0.03,
+        "warnings": []
+      },
+      "actionPlan": "Candidate only on reclaim of entry zone with broad market support; avoid if indexes fade.",
+      "risk": {
+        "entryZone": [
+          890,
+          905
+        ],
+        "targetZone": [
+          955,
+          980
+        ],
+        "invalidationLevel": 858,
+        "riskRewardRatio": 2.15,
+        "positionSizingNote": "Keep size modest; stop distance is wide for a short-term trade.",
+        "whatChangesMind": [
+          "Close below invalidation",
+          "Sector breadth deteriorates",
+          "Volume fails to confirm breakout"
+        ]
+      },
+      "dataQuality": {
+        "source": "Demo EOD aggregate",
+        "feedType": "EOD",
+        "timestamp": "2026-05-12T21:00:00.000Z",
+        "delay": "prior close / demo snapshot",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Demo data only; not execution-grade."
+        ]
+      },
+      "alerts": [
+        "Use limit orders; demo quote may be stale."
+      ],
+      "tags": [
+        "semiconductors",
+        "momentum",
+        "large-cap"
+      ]
+    },
+    {
+      "id": "long-msft-quality-demo",
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "assetClass": "stock",
+      "category": "long_term_stock",
+      "setupType": "Quality compounder pullback",
+      "thesis": "Long-term watch candidate if valuation cools while cloud and AI fundamentals remain intact.",
+      "explanation": "The mock long-term setup prioritizes business quality and durable cash flow over near-term price momentum.",
+      "score": {
+        "total": 74,
+        "technical": 62,
+        "catalyst": 75,
+        "liquidity": 96,
+        "risk": 72,
+        "dataQuality": 65
+      },
+      "confidence": 70,
+      "confidenceBand": "medium",
+      "status": "candidate",
+      "catalyst": "Cloud growth, AI platform monetization, and enterprise software resilience.",
+      "technicalContext": "Sideways consolidation in demo data; not an urgent breakout setup.",
+      "liquidity": {
+        "averageDailyVolume": 21000000,
+        "dollarVolume": 9000000000,
+        "bidAskSpreadPercent": 0.02,
+        "warnings": []
+      },
+      "actionPlan": "Scale only near planned zones; keep dry powder for deeper pullbacks.",
+      "risk": {
+        "entryZone": [
+          410,
+          425
+        ],
+        "targetZone": [
+          475,
+          500
+        ],
+        "invalidationLevel": 382,
+        "riskRewardRatio": 2,
+        "positionSizingNote": "Use long-term allocation sizing, not short-term leverage.",
+        "whatChangesMind": [
+          "Cloud growth materially slows",
+          "Major index loses long-term trend",
+          "Position becomes oversized"
+        ]
+      },
+      "dataQuality": {
+        "source": "Demo EOD aggregate",
+        "feedType": "EOD",
+        "timestamp": "2026-05-12T21:00:00.000Z",
+        "delay": "prior close / demo snapshot",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Demo data only; not execution-grade."
+        ]
+      },
+      "alerts": [],
+      "tags": [
+        "quality",
+        "long-term",
+        "software"
+      ]
+    },
+    {
+      "id": "option-spy-call-spread-demo",
+      "symbol": "SPY 2026-06-19 530/545C",
+      "name": "SPY defined-risk call spread",
+      "assetClass": "option",
+      "category": "options",
+      "setupType": "Defined-risk index continuation",
+      "thesis": "A defined-risk spread can express upside view while capping loss, but only after live option quotes are confirmed.",
+      "explanation": "This is a screening example, not an execution alert. Delayed options data and spread width require broker confirmation.",
+      "score": {
+        "total": 58,
+        "technical": 65,
+        "catalyst": 52,
+        "liquidity": 55,
+        "risk": 72,
+        "dataQuality": 35
+      },
+      "confidence": 45,
+      "confidenceBand": "low",
+      "status": "watch_only",
+      "catalyst": "Potential broad-market continuation if macro data supports risk appetite.",
+      "technicalContext": "Index trend is neutral-to-up in demo data; setup needs confirmation above resistance.",
+      "liquidity": {
+        "openInterest": 420,
+        "optionVolume": 38,
+        "bidAskSpreadPercent": 13.5,
+        "warnings": [
+          "Wide bid/ask spread",
+          "Low same-day option volume",
+          "Delayed/indicative quote"
+        ]
+      },
+      "actionPlan": "Watch-only until live chain confirms tight spreads, sufficient volume, and acceptable max loss.",
+      "risk": {
+        "entryZone": [
+          4.2,
+          4.8
+        ],
+        "targetZone": [
+          7.5,
+          9
+        ],
+        "invalidationLevel": 2.2,
+        "maxLoss": 480,
+        "riskRewardRatio": 1.75,
+        "positionSizingNote": "Defined-risk only; max loss must be acceptable before entry.",
+        "whatChangesMind": [
+          "Spread remains wider than 10%",
+          "Underlying loses support",
+          "Expiration is too close for thesis"
+        ]
+      },
+      "dataQuality": {
+        "source": "Demo indicative options feed",
+        "feedType": "OPRA_INDICATIVE",
+        "timestamp": "2026-05-12T20:30:00.000Z",
+        "delay": "delayed/indicative options quote",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Options data is indicative/delayed and is not suitable for precise fills.",
+          "Confirm bid/ask and open interest with a licensed broker before acting."
+        ]
+      },
+      "optionContract": {
+        "underlying": "SPY",
+        "type": "call",
+        "strike": 530,
+        "expiration": "2026-06-19",
+        "bid": 4.1,
+        "ask": 4.8,
+        "mid": 4.45,
+        "impliedVolatility": 0.19,
+        "delta": 0.42,
+        "maxLoss": 480
+      },
+      "alerts": [
+        "No 0DTE by default",
+        "Not execution-grade OPRA data"
+      ],
+      "tags": [
+        "defined-risk",
+        "index",
+        "options-warning"
+      ]
+    },
+    {
+      "id": "crypto-btc-range-demo",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "assetClass": "crypto",
+      "category": "crypto",
+      "setupType": "Range breakout watch",
+      "thesis": "Watch for breakout confirmation rather than predicting direction inside a choppy range.",
+      "explanation": "The demo crypto card emphasizes volatility controls and confirmation because crypto can gap outside equity market hours.",
+      "score": {
+        "total": 63,
+        "technical": 67,
+        "catalyst": 55,
+        "liquidity": 88,
+        "risk": 48,
+        "dataQuality": 58
+      },
+      "confidence": 55,
+      "confidenceBand": "medium",
+      "status": "watch_only",
+      "catalyst": "ETF flows, macro risk appetite, and liquidity conditions.",
+      "technicalContext": "Range-bound in demo data with breakout trigger above resistance.",
+      "liquidity": {
+        "dollarVolume": 26000000000,
+        "bidAskSpreadPercent": 0.08,
+        "marketCap": 1300000000000,
+        "warnings": [
+          "High weekend and overnight volatility"
+        ]
+      },
+      "actionPlan": "Watch for confirmed close above range; avoid leverage in choppy conditions.",
+      "risk": {
+        "entryZone": [
+          65000,
+          66500
+        ],
+        "targetZone": [
+          70500,
+          73500
+        ],
+        "invalidationLevel": 61800,
+        "riskRewardRatio": 1.8,
+        "positionSizingNote": "Small sizing due to high volatility; no hidden leverage.",
+        "whatChangesMind": [
+          "Breakout fails back into range",
+          "Exchange liquidity deteriorates",
+          "Macro risk-off spike"
+        ]
+      },
+      "dataQuality": {
+        "source": "Demo crypto aggregate",
+        "feedType": "AGGREGATED",
+        "timestamp": "2026-05-13T13:00:00.000Z",
+        "delay": "aggregated demo quote",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Crypto liquidity and volatility can change quickly."
+        ]
+      },
+      "alerts": [
+        "Crypto data is aggregated and demo-only."
+      ],
+      "tags": [
+        "crypto",
+        "range",
+        "volatility"
+      ]
+    }
+  ],
+  "avoidList": [
+    {
+      "id": "avoid-tsla-chase-demo",
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "assetClass": "stock",
+      "category": "avoid",
+      "setupType": "Extended move / poor risk-reward",
+      "thesis": "Avoid chasing after a sharp move without a nearby invalidation level.",
+      "explanation": "The avoid-list example shows how the dashboard can recommend patience when risk is not well-defined.",
+      "score": {
+        "total": 34,
+        "technical": 42,
+        "catalyst": 44,
+        "liquidity": 92,
+        "risk": 18,
+        "dataQuality": 65
+      },
+      "confidence": 35,
+      "confidenceBand": "low",
+      "status": "avoid",
+      "catalyst": "Headline-driven volatility without a clean entry plan.",
+      "technicalContext": "Extended from moving averages in demo data; pullback risk elevated.",
+      "liquidity": {
+        "averageDailyVolume": 95000000,
+        "dollarVolume": 16000000000,
+        "bidAskSpreadPercent": 0.04,
+        "warnings": [
+          "Volatility elevated"
+        ]
+      },
+      "actionPlan": "Wait for a base, pullback, or defined invalidation before reconsidering.",
+      "risk": {
+        "entryZone": [
+          185,
+          195
+        ],
+        "targetZone": [
+          205,
+          215
+        ],
+        "invalidationLevel": 170,
+        "riskRewardRatio": 0.85,
+        "positionSizingNote": "No position suggested; setup lacks favorable risk/reward.",
+        "whatChangesMind": [
+          "Pullback forms higher low",
+          "Risk/reward improves above 1.5",
+          "Catalyst becomes measurable"
+        ]
+      },
+      "dataQuality": {
+        "source": "Demo EOD aggregate",
+        "feedType": "EOD",
+        "timestamp": "2026-05-12T21:00:00.000Z",
+        "delay": "prior close / demo snapshot",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Demo data only; not execution-grade."
+        ]
+      },
+      "alerts": [
+        "Low-confidence ideas default away from action."
+      ],
+      "tags": [
+        "avoid",
+        "risk-discipline"
+      ]
+    }
+  ],
+  "watchlists": [
+    {
+      "id": "broad-market",
+      "name": "Broad Market",
+      "description": "Index and volatility proxies for market-regime context.",
+      "items": [
+        {
+          "symbol": "SPY",
+          "kind": "etf"
+        },
+        {
+          "symbol": "QQQ",
+          "kind": "etf"
+        },
+        {
+          "symbol": "IWM",
+          "kind": "etf"
+        },
+        {
+          "symbol": "DIA",
+          "kind": "etf"
+        },
+        {
+          "symbol": "VIX",
+          "kind": "etf"
+        }
+      ]
+    },
+    {
+      "id": "large-cap-tech-ai",
+      "name": "Large-Cap Tech / AI",
+      "description": "Liquid mega/large-cap AI, cloud, platform, and semiconductor leaders.",
+      "items": [
+        {
+          "symbol": "NVDA",
+          "kind": "stock"
+        },
+        {
+          "symbol": "MSFT",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AAPL",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AMZN",
+          "kind": "stock"
+        },
+        {
+          "symbol": "GOOGL",
+          "kind": "stock"
+        },
+        {
+          "symbol": "META",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AMD",
+          "kind": "stock"
+        },
+        {
+          "symbol": "AVGO",
+          "kind": "stock"
+        },
+        {
+          "symbol": "SMCI",
+          "kind": "stock"
+        },
+        {
+          "symbol": "PLTR",
+          "kind": "stock"
+        }
+      ]
+    },
+    {
+      "id": "high-liquidity-options-candidates",
+      "name": "High-Liquidity Options Candidates",
+      "description": "Underlyings to screen for defined-risk options ideas; quotes remain delayed/indicative until licensed OPRA is configured.",
+      "items": [
+        {
+          "symbol": "SPY",
+          "kind": "option"
+        },
+        {
+          "symbol": "QQQ",
+          "kind": "option"
+        },
+        {
+          "symbol": "IWM",
+          "kind": "option"
+        },
+        {
+          "symbol": "AAPL",
+          "kind": "option"
+        },
+        {
+          "symbol": "MSFT",
+          "kind": "option"
+        },
+        {
+          "symbol": "NVDA",
+          "kind": "option"
+        },
+        {
+          "symbol": "TSLA",
+          "kind": "option"
+        },
+        {
+          "symbol": "AMD",
+          "kind": "option"
+        },
+        {
+          "symbol": "AMZN",
+          "kind": "option"
+        },
+        {
+          "symbol": "META",
+          "kind": "option"
+        },
+        {
+          "symbol": "GOOGL",
+          "kind": "option"
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto",
+      "description": "Major crypto assets for public market-data watch mode.",
+      "items": [
+        {
+          "symbol": "BTC",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "ETH",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "SOL",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "BNB",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "XRP",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "DOGE",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "LINK",
+          "kind": "crypto"
+        },
+        {
+          "symbol": "AVAX",
+          "kind": "crypto"
+        }
+      ]
+    },
+    {
+      "id": "defensive-macro",
+      "name": "Defensive / Macro-Sensitive",
+      "description": "Defensive sectors and macro proxies for risk-off or rate-sensitive context.",
+      "items": [
+        {
+          "symbol": "GLD",
+          "kind": "etf"
+        },
+        {
+          "symbol": "TLT",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLE",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLF",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLK",
+          "kind": "etf"
+        },
+        {
+          "symbol": "XLU",
+          "kind": "etf"
+        }
+      ]
+    }
+  ],
+  "watchlistAlerts": [
+    {
+      "id": "alert-options-quality",
+      "symbol": "SPY",
+      "message": "Options quote is delayed/indicative; verify live chain before any action.",
+      "severity": "warning",
+      "dataQuality": {
+        "source": "Demo indicative options feed",
+        "feedType": "OPRA_INDICATIVE",
+        "timestamp": "2026-05-12T20:30:00.000Z",
+        "delay": "delayed/indicative options quote",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Options data is indicative/delayed and is not suitable for precise fills.",
+          "Confirm bid/ask and open interest with a licensed broker before acting."
+        ]
+      }
+    },
+    {
+      "id": "alert-low-confidence",
+      "symbol": "BTC",
+      "message": "Breakout not confirmed; dashboard marks this as watch-only.",
+      "severity": "info",
+      "dataQuality": {
+        "source": "Demo crypto aggregate",
+        "feedType": "AGGREGATED",
+        "timestamp": "2026-05-13T13:00:00.000Z",
+        "delay": "aggregated demo quote",
+        "level": "warning",
+        "suitableFor": [
+          "screening",
+          "analysis"
+        ],
+        "warnings": [
+          "Crypto liquidity and volatility can change quickly."
+        ]
+      }
+    }
+  ],
+  "dataWarnings": [
+    "GitHub Pages output is public-facing; exclude private holdings, balances, brokerage data, API keys, and other sensitive portfolio details.",
+    "Demo snapshot only; do not use as investment advice.",
+    "No auto-trading and no guaranteed returns.",
+    "Options quotes are delayed/indicative unless licensed OPRA data is configured.",
+    "Low-confidence ideas default to watch-only or avoid."
+  ],
+  "providerHealth": [
+    {
+      "source": "Demo EOD aggregate",
+      "feedType": "EOD",
+      "timestamp": "2026-05-12T21:00:00.000Z",
+      "delay": "prior close / demo snapshot",
+      "level": "warning",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Demo data only; not execution-grade."
+      ]
+    },
+    {
+      "source": "Demo indicative options feed",
+      "feedType": "OPRA_INDICATIVE",
+      "timestamp": "2026-05-12T20:30:00.000Z",
+      "delay": "delayed/indicative options quote",
+      "level": "warning",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Options data is indicative/delayed and is not suitable for precise fills.",
+        "Confirm bid/ask and open interest with a licensed broker before acting."
+      ]
+    },
+    {
+      "source": "Demo crypto aggregate",
+      "feedType": "AGGREGATED",
+      "timestamp": "2026-05-13T13:00:00.000Z",
+      "delay": "aggregated demo quote",
+      "level": "warning",
+      "suitableFor": [
+        "screening",
+        "analysis"
+      ],
+      "warnings": [
+        "Crypto liquidity and volatility can change quickly."
+      ]
+    }
+  ],
+  "aiAnalysis": {
+    "mode": "fallback/offline",
+    "status": "fallback",
+    "provider": "offline-template",
+    "model": "deterministic-template-v1",
+    "generatedAt": "2026-05-13T23:30:41.096Z",
+    "summary": "Demo regime is mixed: large-cap trend remains constructive, but options and crypto signals require confirmation. Top ranked setups by existing score: NVDA (78/100, medium), MSFT (74/100, medium), BTC (63/100, medium). This offline brief is deterministic and does not add outside news or model judgment.",
+    "keyDrivers": [
+      "Market regime is neutral with sideways trend and normal volatility.",
+      "NVDA: Momentum pullback near support; score 78/100; confidence medium.",
+      "MSFT: Quality compounder pullback; score 74/100; confidence medium.",
+      "BTC: Range breakout watch; score 63/100; confidence medium."
+    ],
+    "risks": [
+      "No AI provider key or local endpoint configured.",
+      "2 setup(s) are low-confidence or watch-only; avoid upgrading without fresh evidence.",
+      "GitHub Pages output is public-facing; exclude private holdings, balances, brokerage data, API keys, and other sensitive portfolio details.",
+      "Demo snapshot only; do not use as investment advice.",
+      "No auto-trading and no guaranteed returns."
+    ],
+    "recommendedBehavior": "selective",
+    "sourceNotes": [
+      "AI mode: fallback/offline; no external model call was made.",
+      "Demo EOD aggregate EOD prior close / demo snapshot",
+      "Demo indicative options feed OPRA_INDICATIVE delayed/indicative options quote",
+      "Demo crypto aggregate AGGREGATED aggregated demo quote"
+    ]
+  }
+}
